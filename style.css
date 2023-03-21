@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kumbh Sans',sans-serif;
+    background-color: hsl(185, 75%, 39%);
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(https://digitshack.com/codepen/mentor4/bg-pattern-top.svg), url(https://digitshack.com/codepen/mentor4/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 48vw bottom 40vh,left 45vw top 44vh;
+}
+
+body section {
+    background-color: white;
+    text-align: center;
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -ms-border-radius: 10px 10px 10px 10px;
+    -o-border-radius: 10px 10px 10px 10px;
+}
+.container {
+    position: relative;
+}
+
+.container .card {
+    width: 100%;
+    height: 120px;
+    border-radius: 10px 10px 0 0;
+    -webkit-border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    -ms-border-radius: 10px 10px 0 0;
+    -o-border-radius: 10px 10px 0 0;
+}
+.container .victor {
+    position: absolute;
+    top: 70px;
+    left: 130px;
+    object-fit: cover;
+    width: 90px;
+    height: 90px;
+    border: white 5px solid;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.container .name .top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0 10px;
+}
+.container .name .top h1 {
+    font-size: 18px;
+    padding-right: 10px;
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+}
+.container .name .top span {
+    font-weight: 400;
+    color: hsl(0, 0%, 59%);
+}
+.container .name :last-child p {
+    color: hsl(0, 0%, 59%);
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.container hr {
+    opacity: 0.3;
+}
+.container .details {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px;
+}
+.container .details p {
+    font-size: 18px;
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+}
+.container .details span {
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: 400;
+    color: hsl(0, 0%, 59%);
+}
